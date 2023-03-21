@@ -47,8 +47,42 @@ EXPOSE 8080
 entrypoint ["python"]
 CMD ["application.py"]
 ```
+## Step 4
 **build the dockerfile.**
 ```
 docker build -t finance_app -f dockerfile .
 ```
 This will build the docker image.
+**Varify that the image is build successfully by using following command**
+```
+docker ps -a
+```
+## Step 5
+**Push the docker image to docker hub.**
+```
+
+```
+## step 6
+**Create the github repository by using following command**
+```
+
+```
+## Step 7
+**Create Readme.txt and push to github.**
+```
+touch readme.txt
+```
+Style and describe your project in Readme file
+now push to the github
+```
+git add readme.txt
+git commit -m "Adding readme.txt file"
+git push -u origin main
+```
+## Step 8 
+**Push your Codebase to Github.**
+```
+push add 
+push commit -m "adding Codebase to github"
+git push -u origin main
+```
