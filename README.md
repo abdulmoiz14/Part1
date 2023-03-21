@@ -26,6 +26,7 @@ touch dockerfile
 **open dockerfile in editor mode.**
 nano dockerfile
 **write and save following text in dockerfile.**
+'''
 FROM python:3.6
 LABEL maintainer = "abdulmoiz1443@gmail.com"
 COPY . /app
@@ -34,6 +35,7 @@ RUN pip install -r requirements.txt
 EXPOSE 8080
 entrypoint ["python"]
 CMD ["application.py"]
+'''
 **build the dockerfile.**
 docker build -t finance_app -f dockerfile .
 This will build the docker image.
