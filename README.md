@@ -58,14 +58,27 @@ This will build the docker image.
 docker ps -a
 ```
 ## Step 5
+**first login to docker**
+```
+docker login
+```
 **Push the docker image to docker hub.**
 ```
-
+docker tag imageName:tag username/imageName:tag
+docker push username/imageName:tag
 ```
+**This is the link of my repository in dockerhub** <br />
+https://hub.docker.com/repository/docker/abdulmoiz1443/finance_flask/general
 ## step 6
 **Create the github repository by using following command**
+First create the repository in github.com
 ```
-
+git init
+git add --all
+git commit -m "adding codeSpace"
+git branch -M main
+git remote add origin https://github.com/abdulmoiz14/Part1-.git
+git push -u origin main
 ```
 ## Step 7
 **Create Readme.txt and push to github.**
