@@ -18,6 +18,11 @@
   ```
   git checkout cs50/problems/2020/x/tracks/web/finance
   ```
+  **Add this code into the application.py**
+  ```
+  if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080)
+  ```
   
 ## Step 2
 ### dependencies: 
@@ -52,11 +57,18 @@ CMD ["application.py"]
 ```
 docker build -t finance_app -f dockerfile .
 ```
-This will build the docker image.
+This will build the docker image. <br />
 **Varify that the image is build successfully by using following command**
 ```
 docker ps -a
 ```
+![Screenshot (23)](https://user-images.githubusercontent.com/65711565/227139352-190f31d3-f801-4083-a9dc-a4010259ba52.png)
+**run docker image**
+```
+docker run -it -e API_KEY=123 finance_flask
+```
+![Screenshot (24)](https://user-images.githubusercontent.com/65711565/227139615-657a66f4-dd8c-4500-93b0-416abbcfd32f.png)
+
 ## Step 5
 **first login to docker**
 ```
