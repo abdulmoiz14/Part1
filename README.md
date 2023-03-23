@@ -82,7 +82,7 @@ docker push username/imageName:tag
 **This is the link of my repository in dockerhub** <br />
 https://hub.docker.com/repository/docker/abdulmoiz1443/finance_flask/general
 ## step 6
-**Create the github repository by using following command**
+**Create the github repository by using following command** <br />
 First create the repository in github.com
 ```
 git init
